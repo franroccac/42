@@ -6,7 +6,7 @@ void	*ft_calloc(size_t n, size_t size)
 
 	buffer = (void *)malloc(size * n);
 	if (!buffer)
-		return (NULL);
+		return (0);
 	ft_bzero(buffer, size * n);
 	return (buffer);
 }
