@@ -8,7 +8,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	dest = (char *)dst;
 	source = (char *)src;
 	if (!dst && !src)
-		return (NULL);
+		return (0);
 	if (dest > source)
 	{
 		while (len-- > 0)
@@ -23,4 +23,4 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}
 	return (dst);
-}	
+}
