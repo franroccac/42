@@ -47,15 +47,3 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	str[j] = '\0';
 	return(str);
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-	char *s = "Hola mundo!";
-	unsigned int start = 3;
-	unsigned int len = 5;
-
-	printf("Substring: %s", ft_substr(s, start, len));
-	return (0);
-}
-*/

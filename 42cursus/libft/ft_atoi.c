@@ -12,23 +12,27 @@
 
 int	ft_atoi(const char *str)
 {
+	int	c;
 	int	s;
-	int	val;
+	int	res;
 
+	c = 0;
 	s = 1;
-	val = 0;
-	while (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\f'
-		|| *str == '\v' || *str == '\r')
-		str++;
-	if (*str == '-')
-		s = -1;
-	if (*str == '-' || *str == '+')
-		++str;
-	while (ft_isdigit(*str))
+	res = 0;
+	while ((str[c] >= '\t' && str[c] <= '\r') || str[c] == ' ')
+		c++;
+	if (str[c] == '-' || str[c] == '+')
 	{
-		val = val * 10 + (*str - '0');
-		str++;
+		if (str[c] == '-')
+		{
+			s *= -1;
+		}
+		c++;
 	}
-	val *= s;
-	return (val);
+	while (str[c] >= '0' && str[c] <= '9')
+	{
+		res = (str[c] - '0') + (res * 10);
+		c++;
+	}
+	return (res * s);
 }

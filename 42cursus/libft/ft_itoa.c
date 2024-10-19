@@ -10,3 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <stdlib.h>
+
+char *ft_itoa(int n)
+{
+    int i;
+    char *nb;
+    int len;
+
+    i = 0;
+    nb = (char *)malloc(len + 1);
+    while (n >= 0)
+    {
+        nb[i] = (n / 10) + '0';
+        i++;
+    }
+    return (nb);
+}
+
+int main()
+{
+    int n = 100;
+    printf("%s", ft_itoa(n));
+}

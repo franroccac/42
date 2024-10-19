@@ -12,6 +12,25 @@
 
 #include <stdlib.h>
 
+int	word_count(char const *s, char c)
+{
+	unsigned int	i;
+	unsigned int	count;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] = c)
+		{
+			count++;
+		}
+		i++;
+	}
+	return (count);
+}
+
+int	strndup()
+
 char **ft_split(char const *s, char c)
 {
 	
