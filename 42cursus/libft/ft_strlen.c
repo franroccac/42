@@ -6,9 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:46:07 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:46:12 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:55:47 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

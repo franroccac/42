@@ -6,16 +6,16 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:45:26 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:45:26 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:53:51 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-	char c;
+	int		i;
+	char	c;
 
 	i = 0;
 	c = '\n';

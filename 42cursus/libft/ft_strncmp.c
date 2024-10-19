@@ -6,9 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:46:25 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:46:26 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:55:53 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

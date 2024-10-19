@@ -6,11 +6,13 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:45:56 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:45:56 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:55:41 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 {
 	unsigned int	count;
 	unsigned int	i;

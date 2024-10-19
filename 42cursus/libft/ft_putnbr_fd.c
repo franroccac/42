@@ -6,12 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:45:29 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:45:29 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:54:00 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <fcntl.h>
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -36,14 +35,4 @@ void	ft_putnbr_fd(int n, int fd)
 		n = n + '0';
 		write(fd, &n, 1);
 	}
-}
-
-int main()
-{
-	int fd = open("putnbr.txt", O_WRONLY | O_CREAT, 0644);
-	if (fd == -1)
-		return 1;
-	ft_putnbr_fd(189487, fd);
-	close (fd);
-	return 0;
 }

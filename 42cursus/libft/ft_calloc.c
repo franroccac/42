@@ -6,28 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:41:35 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:44:04 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:57:08 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-void	*ft_memset(void *b, int c, size_t len)
-{
-	char	*p;
-
-	p = (char *)b;
-	while (len > 0)
-	{
-		p[len - 1] = c;
-		len--;
-	}
-	return (b);
-}
-
-void	ft_bzero(void *str, size_t n)
-{
-	ft_memset(str, 0, n);
-}
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -35,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 
 	ptr = malloc(count * size);
 	if (ptr == 0)
-		return ;
+		return (NULL);
 	ft_bzero(ptr, count * size);
 	return (ptr);
 }

@@ -6,11 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:44:34 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:44:36 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:51:13 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if ((c >= '0' && c <= '9'))
 		return (1);

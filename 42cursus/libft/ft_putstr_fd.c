@@ -6,12 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:45:33 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:45:34 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:54:07 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

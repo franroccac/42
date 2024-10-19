@@ -6,20 +6,22 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:45:47 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:45:48 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:58:16 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_striteri(char *s, void (*f)(unsigned int, char*))
-{
-    unsigned int    i;
+#include "libft.h"
 
-    i = 0;
-    if(![i])
-        return ;
-    while(s[i])
-    {
-        f(i, &s[i]);
-        i++;
-    }
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+	unsigned int	i;
+
+	i = 0;
+	if (!s[i])
+		return (NULL);
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }

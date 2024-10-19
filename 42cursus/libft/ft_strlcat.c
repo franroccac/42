@@ -6,9 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:45:53 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:45:54 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:55:35 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {

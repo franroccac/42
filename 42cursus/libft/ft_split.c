@@ -6,11 +6,11 @@
 /*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:45:36 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:45:37 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/19 21:54:12 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int	word_count(char const *s, char c)
 {
