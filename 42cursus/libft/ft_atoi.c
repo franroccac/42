@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frocca-c <frocca-c@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 17:40:23 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/06 17:40:25 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/20 00:22:12 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

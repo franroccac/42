@@ -3,21 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frocca-c <frocca-c@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: frocca-c <frocca-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 21:25:27 by frocca-c          #+#    #+#             */
-/*   Updated: 2024/10/19 21:59:08 by frocca-c         ###   ########.fr       */
+/*   Updated: 2024/10/20 03:00:04 by frocca-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT.H
-#define LIBFT.H
+#ifndef LIBFT_H
+# define LIBFT_H
 
-#include <unistd.h>//write
-#include <stdlib.h>//malloc, free
-#include <stddef.h>//size_t
+# include <unistd.h>//write
+# include <stdlib.h>//malloc, free
+# include <stddef.h>//size_t
 
 int				ft_atoi(const char *str);
+void			ft_bzero(void *str, size_t n);
 void			*ft_memset(void *b, int c, size_t len);
 void			*ft_calloc(size_t count, size_t size);
 int				ft_isalnum(int c);
